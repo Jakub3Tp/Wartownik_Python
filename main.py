@@ -14,7 +14,7 @@ class Main:
         index = self.table.Search(value_to_find)
 
         print("Zawartość tablicy:")
-        print(", ".join(map(str, self.table.get_array())))
+        print(", ".join(map(str, self.table.get_n())))
 
         if index != -1:
             print(f"Liczba {value_to_find} została znaleziona na indeksie: {index}")

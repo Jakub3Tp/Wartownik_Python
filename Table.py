@@ -17,5 +17,5 @@ class Table:
                 return i
         return -1
 
-    def get_array(self):
+    def get_n(self):
         return self.n
