@@ -6,12 +6,12 @@ class Table:
         self.min = min
         self.max = max
         self.n = []
-        self.Fill()
+        self.fill()
 
-    def Fill(self):
+    def fill(self):
         self.n = [random.randint(self.min, self.max) for i in range(self.size)]
 
-    def Search(self, value):
+    def search(self, value):
         for i, element in enumerate(self.n):
             if element == value:
                 return i

@@ -6,20 +6,20 @@ class Main:
 
     def main(self):
         try:
-            value_to_find = int(input("Podaj liczbę całkowitą do wyszukania w tablicy: "))
+            find = int(input("Podaj liczbę całkowitą do wyszukania w tablicy: "))
         except ValueError:
             print("Wprowadzono nieprawidłową wartość. Uruchom program ponownie.")
             return
 
-        index = self.table.Search(value_to_find)
+        index = self.table.search(find)
 
         print("Zawartość tablicy:")
         print(", ".join(map(str, self.table.get_n())))
 
         if index != -1:
-            print(f"Liczba {value_to_find} została znaleziona na indeksie: {index}")
+            print(f"Liczba {find} została znaleziona na indeksie: {index}")
         else:
-            print(f"Liczba {value_to_find} nie została znaleziona w tablicy.")
+            print(f"Liczba {find} nie została znaleziona w tablicy.")
 
 
 if __name__ == "__main__":
